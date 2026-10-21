@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Henna | Wedding &amp; Beauty Marketplace</title>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ======== TOP BAR ======== -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <ul class="social-icons">
+      <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+    </ul>
+    <ul class="topbar-contact">
+      <li><i class="fa-solid fa-location-dot"></i> Riyadh, Saudi Arabia</li>
+      <li><i class="fa-solid fa-envelope"></i> info@hennaapp.sa</li>
+    </ul>
+    <div class="lang-switch">
+      <i class="fa-solid fa-globe"></i>
+      <select id="langSelect">
+        <option value="en">English</option>
+        <option value="ar">العربية</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<!-- ======== HEADER ======== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#" class="logo">
+      <i class="fa-solid fa-ring"></i>
+      <span>Henna</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#home" class="active">Home</a>
+      <a href="#services">Wedding services</a>
+      <a href="#providers">Providers</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <form class="search-box" onsubmit="return false;">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search" />
+      </form>
+      <button class="btn btn-primary btn-download-top">
+        <i class="fa-solid fa-download"></i> <span>Download App</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="sub-header">
+    <div class="container sub-header-inner">
+      <span class="breadcrumb"><i class="fa-solid fa-house"></i> Home</span>
+      <div class="auth-actions">
+        <button class="btn btn-primary" id="createAccountBtn">Create Account</button>
+        <button class="btn btn-outline" id="loginBtn">Login</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ======== HERO ======== -->
+<section class="hero" id="home" style="background-image:url('assets/hero.jpg');">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <h1>WELCOME</h1>
+    <p>
+      Maxime recusandae nobis maxime recusandae nobis maxime recusandae nobis
+      maxime recusandae nobis
+    </p>
+    <button class="btn btn-primary btn-lg" id="getStartedBtn">Get Started</button>
+  </div>
+</section>
+
+<!-- ======== PHOTOGRAPHY STRIP ======== -->
+<section class="photography-strip">
+  <div class="container">
+    <div class="photo-grid" id="photoGrid"></div>
+  </div>
+</section>
+
+<!-- ======== OUR PROVIDERS ======== -->
+<section class="section" id="providers">
+  <div class="container">
+    <div class="section-head">
+      <h2>Our Providers</h2>
+      <a href="#" class="see-all">See All Providers <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="provider-grid" id="providerGrid"></div>
+  </div>
+</section>
+
+<!-- ======== OUR SERVICES ======== -->
+<section class="section section-alt" id="services">
+  <div class="container">
+    <div class="section-head">
+      <h2>Our Services</h2>
+      <a href="#" class="see-all">See All Services <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="service-grid" id="serviceGrid"></div>
+  </div>
+</section>
+
+<!-- ======== JOIN TO OUR PROVIDERS ======== -->
+<section class="section join-section">
+  <div class="container join-grid">
+    <div class="join-text">
+      <h3>Join</h3>
+      <h2>To Our Providers</h2>
+      <p>
+        Numquam ut sed autem molestiae que voluptate voluptas. Esse eius
+        dolorum velit molestiae quas voluptas, d aut animi iusto quam itaque
+        error voluptas nobis quibusdam eligendi.
+      </p>
+      <button class="btn btn-primary" id="joinBtn">Join</button>
+    </div>
+    <div class="join-gallery" id="joinGallery"></div>
+  </div>
+</section>
+
+<!-- ======== NEWSLETTER ======== -->
+<section class="newsletter">
+  <div class="container">
+    <h2>Newsletter</h2>
+    <p>
+      Be the first one to know about discounts, offers and events easily in
+      your mailbox. Unsubscribe whenever you like with one click.
+    </p>
+    <form class="newsletter-form" id="newsletterForm">
+      <i class="fa-solid fa-envelope"></i>
+      <input type="email" required placeholder="Enter Your E-Mail" />
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <p class="newsletter-msg" id="newsletterMsg"></p>
+  </div>
+</section>
+
+<!-- ======== DOWNLOAD APP BANNER ======== -->
+<section class="app-banner" style="background-image:url('assets/phone-bg.jpg');">
+  <div class="app-banner-overlay"></div>
+  <div class="container app-banner-content">
+    <h2>Download<br />Henna Mobile App</h2>
+    <p>
+      Numquam ut sed autem molestiae que voluptate voluptas. Esse eius
+      dolorum velit molestiae quas voluptas.
+    </p>
+    <div class="app-buttons">
+      <button class="btn btn-dark"><i class="fa-brands fa-apple"></i> Download Ios</button>
+      <button class="btn btn-light"><i class="fa-brands fa-android"></i> Download Android</button>
+    </div>
+  </div>
+</section>
+
+<!-- ======== ABOUT HENNA ======== -->
+<section class="section" id="about">
+  <div class="container">
+    <h2 class="about-title">About Henna</h2>
+    <div class="about-grid">
+      <div class="about-card card-coral">
+        <h3>Objectives</h3>
+        <p>Lorem asdaslorem asdaslorem<br />asdaslorem asdaslorem<br />asdaslorem asdas</p>
+      </div>
+      <div class="about-card card-teal">
+        <h3>Visions</h3>
+        <p>Lorem asdaslorem asdaslorem<br />asdaslorem asdaslorem<br />asdaslorem asdas</p>
+      </div>
+      <div class="about-card card-coral">
+        <h3>Missions</h3>
+        <p>Lorem asdaslorem asdaslorem<br />asdaslorem asdaslorem<br />asdaslorem asdas</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== FOOTER ======== -->
+<footer class="site-footer" id="contact">
+  <div class="container footer-grid">
+    <div class="footer-about">
+      <a href="#" class="logo logo-footer">
+        <i class="fa-solid fa-ring"></i>
+        <span>Henna</span>
+      </a>
+      <p>
+        We are a lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut
+        enim ad minim veniam quis nostrud ullamco laboris nisi ut aliquip.
+      </p>
+      <p class="footer-contact">
+        Contact Us:<br />
+        <a href="mailto:webdesign@example.com">webdesign@example.com</a>
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Useful Links</h4>
+      <ul>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Posts</a></li>
+        <li><a href="#">Policy</a></li>
+        <li><a href="#">Payment Methods</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#">Wedding Services</a></li>
+        <li><a href="#">Others</a></li>
+        <li><a href="#">Others</a></li>
+        <li><a href="#">Others</a></li>
+        <li><a href="#">Others</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Social Media</h4>
+      <ul>
+        <li><a href="#"><i class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+        <li><a href="#"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a></li>
+        <li><a href="#"><i class="fa-brands fa-telegram"></i> Telegram</a></li>
+        <li><a href="#">Others</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; <span id="year"></span> All Rights Reserved.</div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>
